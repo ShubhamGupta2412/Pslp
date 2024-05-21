@@ -1,0 +1,13 @@
+x1 = [30 35];
+x2 = [25 30];
+x3 = [35 40];
+x4 = [20 25];
+x5 = [40 45];
+mu=33;
+sigma = 3;
+Px1 = normspec(x1,mu, sigma);
+Px2 = normspec(x2,mu,sigma);
+Px3 = normspec(x3,mu, sigma);
+Px4 = normspec(x4,mu,sigma);
+Px5 = normspec(x5,mu, sigma);
+Profit= 100*Px1 + 50*(Px2+Px3) - 60*(Px4+Px5);
